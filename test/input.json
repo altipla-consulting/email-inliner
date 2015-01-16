@@ -1,0 +1,12 @@
+{
+  "contents": "<!DOCTYPE html>\n<html>\n<head>\n  \n  <title>Example</title>\n\n  <link rel=\"stylesheet\" href=\"test.css\">\n\n</head>\n<body>\n  \n  <p>Red paragraph</p>\n\n  <p class=\"blue\">Blue paragraph</p>\n\n  <div>Formatted date: [[$FOODATE]]</div>\n\n</body>\n</html>\n",
+  "cwd": "test/test.html",
+  "lang": "fr",
+  "datetimes": [
+    {
+      "name": "FOODATE",
+      "value": 1422313200,
+      "format": "dd MMM yyyy"
+    }
+  ]
+}
