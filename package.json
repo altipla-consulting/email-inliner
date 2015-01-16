@@ -1,6 +1,6 @@
 {
   "name": "email-inliner",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Inline CSS and format datetimes in email templates",
   "main": "index.js",
   "repository": {
