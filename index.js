@@ -66,9 +66,8 @@ process.stdin.on('end', function () {
   });
 
   var options = {
-    url: 'file://' + path.resolve(process.cwd(), input.cwd),
+    url: 'file://' + path.resolve(process.cwd(), input.cwd, 'non-used.html'),
   };
-  console.log(options);
   juice.juiceContent(input.contents, options, function (err, html) {
     if (err) {
       throw err;
