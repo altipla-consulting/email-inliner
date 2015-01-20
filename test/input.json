@@ -5,7 +5,7 @@
   "datetimes": [
     {
       "name": "FOODATE",
-      "value": 1422313200,
+      "value": "20150212",
       "format": "dd MMM yyyy"
     }
   ]
