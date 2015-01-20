@@ -59,7 +59,7 @@ process.stdin.on('end', function () {
     var variable = new RegExp('\\[\\[\\$' + datetime.name + '\\]\\]', 'g');
 
     var formatter = new goog.i18n.DateTimeFormat(datetime.format);
-    var date = goog.date.date.fromIsoString(datetime.value);
+    var date = goog.date.fromIsoString(datetime.value);
     var output = formatter.format(date);
 
     input.contents = input.contents.replace(variable, output);
