@@ -68,6 +68,9 @@ process.stdin.on('end', function () {
   var options = {
     webResources: {
       relativeTo: path.resolve(process.cwd(), input.cwd)+'/',
+
+      // Don't request and inline images
+      images: false,
     },
   };
   juice.juiceResources(input.contents, options, function(err, html) {
