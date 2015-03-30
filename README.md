@@ -1,2 +1,4 @@
+
 # email-inliner
-Inline CSS and format datetimes in email templates
+
+> Inline CSS and format datetimes in email templates

@@ -16,9 +16,9 @@ goog.require('goog.i18n.DateTimeSymbols_en');
 goog.require('goog.i18n.DateTimeSymbols_fr');
 
 
- 
+
 var input = [];
-process.stdin.setEncoding('utf8'); 
+process.stdin.setEncoding('utf8');
 process.stdin.on('data', function (chunk) {
     input.push(chunk);
 });
@@ -66,9 +66,11 @@ process.stdin.on('end', function () {
   });
 
   var options = {
-    url: 'file://' + path.resolve(process.cwd(), input.cwd, 'non-used.html'),
+    webResources: {
+      relativeTo: path.resolve(process.cwd(), input.cwd)+'/',
+    },
   };
-  juice.juiceContent(input.contents, options, function (err, html) {
+  juice.juiceResources(input.contents, options, function(err, html) {
     if (err) {
       throw err;
     }
@@ -76,5 +78,3 @@ process.stdin.on('end', function () {
     console.log(html);
   });
 });
-
-
